@@ -1,0 +1,65 @@
+th, table, td {
+    border: 1px solid black;
+    margin: 0;
+}
+
+th {
+    background-color: cyan;
+}
+
+td:nth-child(n + 4) {
+    text-align: center;
+}
+
+td:nth-child(n + 5) {
+    padding: 0px 8px;
+}
+
+td:nth-child(n + 6) {
+    padding: 0px;
+}
+
+#title-header {
+    width: 350px;
+}
+
+#author-header {
+    width: 200px;
+}
+
+#pages-header, #read-header {
+    width: 50px;
+}
+
+.book-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 676px;
+}
+
+button {
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 5px 5px 5px lightgray;
+    margin: 10px;
+    padding: 0px 20px;
+    height: 30px;
+    background-color: cornflowerblue;
+}
+
+button:hover {
+    background-color: rgb(69, 69, 183);
+    color: beige;
+}
+
+button:active {
+    background-color: lightblue;
+}
+
+.read { 
+    padding: 0px 8px;
+}
+
+.remove {
+    padding: 0px 10px;
+}
