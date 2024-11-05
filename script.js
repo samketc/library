@@ -29,16 +29,20 @@ closeButton.addEventListener("click", () => {
     clearAddForm();
 });
 
-function Book(title, author, pages, read, id) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.id = id;
-}
-
-Book.prototype.statement = function() {
-return this.title + ' by ' + this.author + '. ' + this.pages + ' pages, have ' + (this.read ? 'already' : 'not') + ' read. My ID is '+this.id ;
+class Book {
+    constructor(title, author, pages, read, id){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+        this.id = id;
+    }
+    statement(){
+        return this.title + ' by ' + this.author + '. ' + this.pages + ' pages, have ' + (this.read ? 'already' : 'not') + ' read. My ID is '+this.id ;
+    }
+    editBookAuthor(author){
+        this.author = author;
+    }
 }
 
 function addBookToLibrary(title, author, pages, read) {
